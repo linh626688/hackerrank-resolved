@@ -3,8 +3,9 @@ function icecreamParlor(m, arr) {
 
   let output = [];
   let mapInput = {};
-  let setArr = new Set();
   let arrSorted = arr.sort((a, b) => a - b);
+
+  let setArr = new Set(arr);
   arr.forEach((el, idx) => {
     mapInput[idx] = el
   })
